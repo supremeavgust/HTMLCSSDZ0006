@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #222222;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbarPart1 {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+  margin: 18px 19px;
+}
+
+.searchSite {
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.navbarPart2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+  margin: 30px 22px;
+}
+main {
+  background-color: #f1e4e6;
+  margin-bottom: 65px;
+}
+.header-content {
+  width: 1600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  display: flex;
+  align-items: center;
+}
+.boxTextMain2 {
+  display: flex;
+  gap: 16px;
+}
+
+.mainText2 {
+  flex-wrap: nowrap;
+  color: #222;
+  font-size: 48px;
+  font-family: "Lato";
+  font-weight: 900;
+}
+.colorTextMain {
+  color: #f16d7f;
+}
+.sectionWraper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  color: #211616 70%;
+  margin-bottom: 96px;
+}
+.bigImgSection {
+  grid-column: 3 span;
+}
+
+.sectionMainWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Rectangle20 {
+  position: absolute;
+}
+
+.textUpImage {
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Lato";
+  position: absolute;
+  color: #ffffff;
+}
+
+.textUpImageBig {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Lato";
+  color: #ffffff;
+  position: absolute;
+}
+
+.changeText1 {
+  color: #f16d7f;
+}
+
+.sectionMain2 {
+  margin-bottom: 48.5px;
+}
+
+.sectionMain2 h1 {
+  color: #222;
+  font-size: 30px;
+  font-family: "Lato";
+}
+
+.sectionMain2 p {
+  color: #9f9f9f;
+  font-size: 14px;
+  font-family: "Lato";
+}
+
+.headMain2text {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.sectionShopMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}
+.slideShop {
+  background-color: #f8f8f8;
+}
+.wrapperTextSlide {
+  display: flex;
+  /* width: 360px; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px 16px;
+}
+
+.slideShop h3 {
+  color: #000;
+  font-size: 13px;
+  font-family: "Lato";
+}
+.slideShop p {
+  color: #5d5d5d;
+  font-size: 14px;
+  font-family: "Lato";
+  font-weight: 300;
+}
+
+.slideShop h2 {
+  color: #f16d7f;
+  font-size: 16px;
+  font-family: "Lato";
+}
+
+.posButtonShop {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60.5px;
+}
+
+.buttonAllPr {
+  background-color: transparent;
+  border: 1px solid #ff6a6a;
+  color: #f26376;
+  font-size: 16px;
+  font-family: "Lato";
+  padding: 14.5px 38.5px 13.5px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .navbarPart1 {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    margin: 18px;
+  }
+  .header-content {
+    width: 768px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+  }
+  .mainImg1 {
+    width: 386px;
+    height: 368px;
+  }
+  .mainText2 {
+    flex-wrap: nowrap;
+    color: #222;
+    font-size: 44px;
+    font-family: "Lato";
+    font-weight: 900;
+  }
+
+  .sectionWraper {
+    gap: 19.9px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-gap: var(--gap_size);
+  }
+
+  .sectionMainWrapper img {
+    width: 231.973px;
+    height: 167.617px;
+  }
+
+  .bigImgSection img {
+    width: 734.581px;
+    height: 116.043px;
+  }
+
+  .sectionShopMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px 16px;
+    justify-items: center;
+    grid-gap: var(--gap_size);
+  }
+
+  .slideShop {
+    background-color: #f8f8f8;
+    width: 360px;
+    margin: 8px;
+  }
+  .wrapperTextSlide {
+    display: flex;
+    gap: 16px;
+    padding: 24px 18px;
+  }
+  .sectionMain2 {
+    margin-bottom: 32.98px;
+  }
+  .posButtonShop {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 71.02px;
+  }
+
+  .buttonAllPr {
+    background-color: transparent;
+    border: 1px solid #ff6a6a;
+    color: #f26376;
+    font-size: 16px;
+    font-family: "Lato";
+    padding: 14.5px 38.5px 13.5px;
+    cursor: pointer;
+  }
+}
