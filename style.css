@@ -98,9 +98,9 @@ main {
   align-items: center;
 }
 
-.Rectangle20 {
+/* .Rectangle20 {
   position: absolute;
-}
+} */
 
 .textUpImage {
   justify-content: center;
@@ -202,7 +202,7 @@ main {
 }
 @media (max-width: 768px) {
   .container {
-    width: 768px;
+    width: 736px;
     margin: 0 auto;
   }
   .navbarPart1 {
@@ -238,16 +238,6 @@ main {
     grid-gap: var(--gap_size);
   }
 
-  .sectionMainWrapper img {
-    width: 231.973px;
-    height: 167.617px;
-  }
-
-  .bigImgSection img {
-    width: 734.581px;
-    height: 116.043px;
-  }
-
   .sectionShopMain {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -255,6 +245,8 @@ main {
     gap: 16px 16px;
     justify-items: center;
     grid-gap: var(--gap_size);
+    align-content: space-evenly;
+    justify-content: center;
   }
 
   .slideShop {
