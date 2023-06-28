@@ -285,4 +285,8 @@ main {
     padding: 14.5px 38.5px 13.5px;
     cursor: pointer;
   }
+
+  .Rectangle20_2 {
+    min-width: initial;
+  }
 }
