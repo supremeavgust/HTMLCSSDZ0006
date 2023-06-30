@@ -20,7 +20,7 @@ img {
 }
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -58,16 +58,17 @@ main {
   background-color: #f1e4e6;
   margin-bottom: 65px;
 }
+
 .header-content {
-  width: 1600px;
+  max-width: 1600px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 .boxTextMain2 {
   display: flex;
-  gap: 16px;
+  gap: 10px;
 }
 
 .mainText2 {
@@ -84,12 +85,15 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
   gap: 30px;
-  color: #211616 70%;
   margin-bottom: 96px;
 }
 .bigImgSection {
   grid-column: 3 span;
+}
+.ImgCategory2 {
+  display: none;
 }
 
 .sectionMainWrapper {
@@ -97,10 +101,6 @@ main {
   justify-content: center;
   align-items: center;
 }
-
-/* .Rectangle20 {
-  position: absolute;
-} */
 
 .textUpImage {
   justify-content: center;
@@ -153,6 +153,8 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .slideShop {
   background-color: #f8f8f8;
@@ -202,7 +204,7 @@ main {
 }
 @media (max-width: 768px) {
   .container {
-    width: 736px;
+    max-width: 736px;
     margin: 0 auto;
   }
   .navbarPart1 {
@@ -211,17 +213,14 @@ main {
     gap: 44px;
     margin: 18px;
   }
+
   .header-content {
-    width: 768px;
+    max-width: 768px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    display: flex;
     align-items: center;
   }
-  .mainImg1 {
-    width: 386px;
-    height: 368px;
-  }
+
   .mainText2 {
     flex-wrap: nowrap;
     color: #222;
@@ -235,24 +234,21 @@ main {
     display: grid;
     align-content: center;
     justify-content: center;
-    grid-gap: var(--gap_size);
   }
 
   .sectionShopMain {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     gap: 16px 16px;
     justify-items: center;
-    grid-gap: var(--gap_size);
     align-content: space-evenly;
     justify-content: center;
+    display: flex;
   }
 
   .slideShop {
     background-color: #f8f8f8;
     width: 360px;
-    margin: 8px;
   }
   .wrapperTextSlide {
     display: flex;
@@ -281,4 +277,37 @@ main {
   .Rectangle20_2 {
     min-width: initial;
   }
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+  .sectionWraper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    color: #211616 70%;
+    margin-bottom: 96px;
+  }
+  .sectionWraper img {
+    width: 343px;
+  }
+  .bigImgSection {
+    grid-column: 1 span;
+  }
+  .ImgCategory1 {
+    display: none;
+  }
+  .ImgCategory2 {
+    display: block;
+  }
+  .sectionMain2 {
+    margin-bottom: 40.61px;
+  }
+  .posButtonShop {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 85px;
 }
