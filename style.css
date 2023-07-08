@@ -46,7 +46,31 @@ header {
   outline: none;
   cursor: pointer;
 }
+.shopImg1 {
+  position: relative;
+}
 
+.ellipseImg5 {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+.ellipseImg5_1 {
+  position: relative;
+}
+
+.ellipseImg5_2 {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .navbarPart2 {
   display: flex;
   justify-content: center;
@@ -57,7 +81,94 @@ header {
 main {
   background-color: #f1e4e6;
   margin-bottom: 65px;
+  display: flex;
+  position: relative;
 }
+
+/* -------------------js-burger--------------------------------------------- */
+.hidden {
+  display: none;
+}
+
+.menu-active {
+  width: 232px;
+  height: 700px;
+  background: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.menu-active__all {
+}
+.menu-close {
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.menu-close__btn {
+  fill: #222;
+  transition: 0.2s;
+}
+
+.menu-close__btn:hover {
+  fill: #f16d7f;
+  transition: 0.2s;
+}
+
+.menu-main-list {
+  margin: 32px;
+}
+
+.menu-heading h4 {
+  display: flex;
+  width: 55px;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #000;
+  font-family: "Lato";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.menu-text {
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+.menu-text {
+  display: flex;
+  width: 55px;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #f16d7f;
+  font-family: "Lato";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menu-list {
+  list-style-type: none;
+  margin-left: 21px;
+  gap: 11px;
+  display: flex;
+  width: 79.4px;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #6f6e6e;
+  font-family: "Lato";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+/* -------------------js-burger--------------------------------------------- */
 
 .header-content {
   max-width: 1600px;
@@ -186,7 +297,37 @@ main {
   font-size: 16px;
   font-family: "Lato";
 }
+/* -----------------------------IMG-SLIDE-SHOP------------------------------------------ */
+.ImgSlideShop {
+  position: relative;
+  margin: 0 auto;
+  height: 420px;
+}
 
+.ImgSlideShop img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.ImgSlideShop img.First {
+  opacity: 0;
+  filter: alpha;
+}
+
+.ImgSlideShop:hover img.First {
+  opacity: 1;
+  filter: alpha;
+}
+
+.ImgSlideShop:hover img.Second,
+.ImgSlideShop img.Second:hover {
+  opacity: 0;
+  filter: alpha;
+}
+/* -------------------------------IMG-SLIDE-SHOP---------------------------------------- */
 .posButtonShop {
   display: flex;
   justify-content: center;
@@ -201,7 +342,235 @@ main {
   font-family: "Lato";
   padding: 14.5px 38.5px 13.5px;
   cursor: pointer;
+  transition: 0.5s;
 }
+
+.buttonAllPr:hover {
+  background-color: #f16d7f;
+  border: 1px solid #f16d7f;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Lato";
+  padding: 14.5px 38.5px 13.5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #222224;
+}
+.delivery {
+  display: flex;
+  padding: 104px;
+  gap: 30px;
+  /* margin-bottom: 86.59px; */
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.delivery__card {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.delivery__card h3 {
+  color: #fbfbfb;
+  font-size: 19.96px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.delivery__card p {
+  width: 360px;
+  color: #fbfbfb;
+  text-align: center;
+  font-size: 13.97px;
+  font-family: "Lato";
+  font-style: normal;
+  /* font-weight: lighter; */
+  font-weight: 300;
+  line-height: normal;
+}
+.footerMain {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(240, 240, 240);
+  background-image: url(img/photo_subscribe.png);
+  object-fit: contain;
+}
+.main3_3_3 {
+  max-width: 1598.001px;
+  height: 448px;
+  background-image: url(img/back_subscribe.svg);
+}
+.imgBackSub {
+  object-fit: cover;
+  position: relative;
+  display: grid;
+  align-items: center;
+}
+.contacts_main h2 {
+  display: flex;
+  max-width: 557px;
+  height: 61px;
+  flex-direction: column;
+  color: #222224;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 200;
+  line-height: 167.2%;
+}
+.contacts_main {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerSection1 img {
+  margin-top: 97px;
+  margin-left: 350px;
+}
+.footerSection1 h3 {
+  display: flex;
+  width: 359.449px;
+  height: 99px;
+  color: #222224;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-left: 228.29px;
+}
+
+.footerSection2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  margin-top: 150px;
+}
+
+.footerSection2 h2 {
+  display: flex;
+  width: 557px;
+  height: 61px;
+  flex-direction: column;
+}
+
+.textSubscribe1 {
+  font-size: 24px;
+}
+
+.contacts_main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.buttonEmailSubmit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  border: none;
+  outline: none;
+  margin-top: 32px;
+  margin-left: 108px;
+}
+.buttonEmail {
+  display: flex;
+  width: 170px;
+  height: 36px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7px 64px 6px 22px;
+  background-color: #e1e1e1;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  opacity: 0.6710000038146973;
+}
+.buttonEmail__1 {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.buttonSubmit {
+  display: flex;
+  width: 100px;
+  height: 49px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #f16d7f;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  cursor: pointer;
+}
+
+.footerContentLogos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerText1 {
+  display: flex;
+  justify-content: start;
+  display: flex;
+  flex-direction: column;
+  color: #fbfbfb;
+  font-size: 16px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 30px;
+}
+
+.footerLogos {
+  display: flex;
+  justify-content: end;
+  gap: 7.29px;
+  margin-top: 24px;
+  margin-bottom: 23px;
+}
+
+.footerLogo_1 {
+  width: 31.451px;
+  height: 32px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.footerLogo_1:hover {
+  width: 31.451px;
+  height: 32px;
+  background-color: #f26376;
+  fill: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   .container {
     max-width: 736px;
@@ -277,12 +646,121 @@ main {
   .Rectangle20_2 {
     min-width: initial;
   }
+  .delivery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main3_3_3 {
+    /* max-width: 1598.001px; */
+    height: 620px;
+    background-image: url(img/back_imgfont768.svg);
+    object-fit: contain;
+  }
+  .contacts_main {
+    display: grid;
+    grid-template-columns: 50%;
+  }
+  .footerSection2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footerSection1 img {
+    margin-top: 62px;
+    margin-left: 0px;
+    margin-bottom: 8px;
+  }
+
+  .img_style {
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+  }
+
+  .footerSectionText1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .footerSection1 h3 {
+    display: flex;
+    width: 359.449px;
+    height: 99px;
+    color: #222224;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 0px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .footerSection2 {
+    margin-top: 80px;
+  }
+  .footerSection2 h2 {
+    display: flex;
+    width: 557px;
+    height: 61px;
+    flex-direction: column;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+  .buttonEmailSubmit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    border: none;
+    outline: none;
+    margin-top: 27px;
+    margin-left: 0px;
+  }
+
+  .footerLogos {
+    margin-right: 8px;
+  }
 }
 
 @media (max-width: 375px) {
   .container {
     max-width: 375px;
     margin: 0 auto;
+  }
+  .searchSiteN {
+    display: none;
+  }
+  .mainImg1 {
+    display: none;
+  }
+  .boxTextMain2 {
+    height: 363px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-content {
+    max-width: 768px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  .mainText2 {
+    color: #222;
+    font-size: 38px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
   }
   .sectionWraper {
     display: grid;
@@ -310,4 +788,110 @@ main {
     display: flex;
     justify-content: center;
     margin-bottom: 85px;
+  }
+  .contacts_main {
+    display: grid;
+    grid-template-columns: 50%;
+  }
+  .contacts_main_1 {
+    max-width: 375px;
+  }
+  .main3_3_3 {
+    /* max-width: 1598.001px; */
+    height: 550px;
+    background-image: url(img/back_photoFon375.svg);
+    object-fit: contain;
+  }
+  .footerSection1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+  .footerSection1 img {
+    margin-bottom: 0px;
+  }
+  .footerSection1 h3 {
+    display: flex;
+    width: 359.449px;
+    height: 99px;
+    color: #222224;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 0px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .footerSection2 h2 {
+    display: flex;
+    width: 557px;
+    height: 61px;
+    flex-direction: column;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+  .footerSection2 {
+    margin-top: 66px;
+  }
+  .buttonEmailSubmit {
+    margin-top: 10px;
+  }
+  .footerSection2 h2 {
+    display: flex;
+    width: 557px;
+    height: 61px;
+    flex-direction: column;
+  }
+  .contacts_main h2 {
+    display: flex;
+    width: 557px;
+    height: 61px;
+    flex-direction: column;
+    color: #222224;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 200;
+    line-height: 167.2%;
+  }
+  .SubscribeStrong {
+    font-size: 24px;
+  }
+  .contacts_main h2 {
+    min-width: 375px;
+  }
+  .footerContentLogos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .footerLogos {
+    margin-right: 0px;
+  }
+  .footerLogos {
+    display: flex;
+    gap: 7.29px;
+    margin-top: 43px;
+    margin-bottom: 0px;
+  }
+  .footerText1 {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    color: #fbfbfb;
+    font-size: 16px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+    margin-top: 40px;
+  }
 }

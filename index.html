@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="Website Icon" type="png" href="img/iconSiteDz.png" />
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Сайт предназначен для домашнего задания"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <script src="script.js" defer></script>
+    <title>My DZ</title>
   </head>
   <body>
     <header class="header">
@@ -23,14 +29,24 @@
           </button>
         </div>
         <div class="navbarPart2">
-          <button class="searchSite">
-            <img src="img/Forma_1.png" alt="formaNav_img" />
+          <button class="searchSite burger-menu__list">
+            <img src="img/Forma_1.png" alt="formaNav_img" class="" />
           </button>
-          <button class="searchSite">
+          <button class="searchSite searchSiteN">
             <img src="img/prof_1.png" alt="prof_img" />
           </button>
-          <button class="searchSite">
-            <img src="img/shop_1.png" alt="shop_img" />
+          <button class="searchSite searchSiteN">
+            <div class="shopImg1">
+              <img src="img/shop_1.png" alt="shop_img" />
+              <div class="ellipseImg5">
+                <img
+                  src="img/Ellipse_5.png"
+                  alt="Ellipse_5"
+                  class="ellipseImg5_1"
+                />
+                <p class="ellipseImg5_2">5</p>
+              </div>
+            </div>
           </button>
         </div>
       </nav>
@@ -48,6 +64,56 @@
             <div class="mainText2">
               <h4>THE BRAND</h4>
               <h6>OF LUXERIOUS <span class="colorTextMain">FASHION</span></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-active hidden">
+        <div class="menu-active__all">
+          <button class="menu-close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40px"
+              viewBox="0 0 512 512"
+            >
+              <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
+                class="menu-close__btn"
+              />
+            </svg>
+          </button>
+          <div class="menu-main-list">
+            <h4 class="menu-heading">MENU</h4>
+            <div class="menu-man">
+              <h5 class="menu-text">MAN</h5>
+              <ul class="menu-list">
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Bags</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">T-Shirts</a></li>
+              </ul>
+            </div>
+            <div class="menu-woman">
+              <h5 class="menu-text">WOMAN</h5>
+              <ul class="menu-list">
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Jackets & Coats</a></li>
+                <li><a href="#">Polos</a></li>
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Shirts</a></li>
+              </ul>
+            </div>
+            <div class="menu-kids">
+              <h5 class="menu-text">KIDS</h5>
+              <ul class="menu-list">
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Jackets & Coats</a></li>
+                <li><a href="#">Polos</a></li>
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Shirts</a></li>
+                <li><a href="#">Bags</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -104,7 +170,15 @@
         </div>
         <div class="sectionShopMain">
           <div class="slideShop">
-            <img src="img/ImgPhoto1.png" alt="ImgShop1" />
+            <a href="#">
+              <div class="ImgSlideShop">
+                <img src="img/ImgPhoto1.png" alt="ImgShop1" class="Second" />
+                <img
+                  src="img/ImgPhoto1S.png"
+                  alt="HoverShopImg"
+                  class="First"
+                /></div
+            ></a>
             <div class="wrapperTextSlide">
               <h3>ELLERY X M'O CAPSULE</h3>
               <p>
@@ -116,7 +190,15 @@
             </div>
           </div>
           <div class="slideShop">
-            <img src="img/ImgPhoto2.png" alt="ImgShop2" />
+            <a href="#">
+              <div class="ImgSlideShop">
+                <img src="img/ImgPhoto2.png" alt="ImgShop1" class="Second" />
+                <img
+                  src="img/ImgPhoto2S.png"
+                  alt="HoverShopImg"
+                  class="First"
+                /></div
+            ></a>
             <div class="wrapperTextSlide">
               <h3>ELLERY X M'O CAPSULE</h3>
               <p>
@@ -128,7 +210,15 @@
             </div>
           </div>
           <div class="slideShop">
-            <img src="img/ImgPhoto3.png" alt="ImgShop3" />
+            <a href="#">
+              <div class="ImgSlideShop">
+                <img src="img/ImgPhoto3.png" alt="ImgShop1" class="Second" />
+                <img
+                  src="img/ImgPhoto3S.png"
+                  alt="HoverShopImg"
+                  class="First"
+                /></div
+            ></a>
             <div class="wrapperTextSlide">
               <h3>ELLERY X M'O CAPSULE</h3>
               <p>
@@ -140,7 +230,15 @@
             </div>
           </div>
           <div class="slideShop">
-            <img src="img/ImgPhoto4.png" alt="ImgShop4" />
+            <a href="#">
+              <div class="ImgSlideShop">
+                <img src="img/ImgPhoto4.png" alt="ImgShop1" class="Second" />
+                <img
+                  src="img/ImgPhoto4S.png"
+                  alt="HoverShopImg"
+                  class="First"
+                /></div
+            ></a>
             <div class="wrapperTextSlide">
               <h3>ELLERY X M'O CAPSULE</h3>
               <p>
@@ -152,7 +250,15 @@
             </div>
           </div>
           <div class="slideShop">
-            <img src="img/ImgPhoto5.png" alt="ImgShop5" />
+            <a href="#">
+              <div class="ImgSlideShop">
+                <img src="img/ImgPhoto5.png" alt="ImgShop1" class="Second" />
+                <img
+                  src="img/ImgPhoto5S.png"
+                  alt="HoverShopImg"
+                  class="First"
+                /></div
+            ></a>
             <div class="wrapperTextSlide">
               <h3>ELLERY X M'O CAPSULE</h3>
               <p>
@@ -164,7 +270,15 @@
             </div>
           </div>
           <div class="slideShop">
-            <img src="img/ImgPhoto6.png" alt="ImgShop6" />
+            <a href="#">
+              <div class="ImgSlideShop">
+                <img src="img/ImgPhoto6.png" alt="ImgShop1" class="Second" />
+                <img
+                  src="img/ImgPhoto6S.png"
+                  alt="HoverShopImg"
+                  class="First"
+                /></div
+            ></a>
             <div class="wrapperTextSlide">
               <h3>ELLERY X M'O CAPSULE</h3>
               <p>
@@ -181,5 +295,149 @@
         <button class="buttonAllPr">Browse All Product</button>
       </div>
     </section>
+    <footer>
+      <div class="delivery container">
+        <div class="delivery__card">
+          <img src="img/Delivery.svg" alt="delivery" />
+          <h3>Free Delivery</h3>
+          <p>
+            Worldwide delivery on all. Authorit tively morph
+            <br />next-generation innov tion with extensive models.
+          </p>
+        </div>
+        <div class="delivery__card">
+          <img src="img/Sales.svg" alt="Sales" />
+          <h3>Sales & discounts</h3>
+          <p>
+            Worldwide delivery on all. Authorit tively morph
+            <br />next-generation innov tion with extensive models.
+          </p>
+        </div>
+        <div class="delivery__card">
+          <img src="img/Quality.svg" alt="Quality" />
+          <h3>Quality assurance</h3>
+          <p>
+            Worldwide delivery on all. Authorit tively morph
+            <br />next-generation innov tion with extensive models.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div class="footerMain">
+      <div class="main3_3_3">
+        <div class="contacts_main contacts_main_1">
+          <div class="footerSection1">
+            <div class="img_style">
+              <img src="img/Intersect.svg" alt="Intersect" />
+            </div>
+            <div class="footerSectionText1">
+              <h3>
+                “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                pulvinar purus condimentum“
+              </h3>
+            </div>
+          </div>
+          <div class="footerSection2">
+            <h2>
+              <div class="textSubscribe__1">
+                <strong class="SubscribeStrong">SUBSCRIBE</strong>
+              </div>
+              FOR OUR NEWLETTER AND PROMOTION
+            </h2>
+            <form>
+              <div class="buttonEmailSubmit">
+                <div class="buttonEmail">
+                  <input
+                    type="email"
+                    class="buttonEmail__1"
+                    placeholder="Enter Your Email"
+                  />
+                </div>
+                <div>
+                  <input type="submit" value="Subscribe" class="buttonSubmit" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- <div class="contacts container"></div> -->
+      </div>
+    </div>
+
+    <footer>
+      <div class="footerContentLogos container">
+        <div class="footerText1">
+          <p>© 2022 Brand All Rights Reserved.</p>
+        </div>
+        <div class="footerLogos">
+          <a href="#"
+            ><div class="footerLogo_1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 320 512"
+              >
+                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                />
+              </svg></div
+          ></a>
+          <a href="#"
+            ><div class="footerLogo_1">
+              <svg
+                width="16"
+                height="17"
+                viewBox="0 0 16 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_190_1610)">
+                  <path
+                    d="M8.13677 4.68162C6.02163 4.68162 4.31555 6.38494 4.31555 8.49666C4.31555 10.6084 6.02163 12.3117 8.13677 12.3117C10.2519 12.3117 11.958 10.6084 11.958 8.49666C11.958 6.38494 10.2519 4.68162 8.13677 4.68162ZM8.13677 10.9769C6.76991 10.9769 5.65248 9.86463 5.65248 8.49666C5.65248 7.12869 6.76658 6.01639 8.13677 6.01639C9.50695 6.01639 10.6211 7.12869 10.6211 8.49666C10.6211 9.86463 9.50363 10.9769 8.13677 10.9769V10.9769ZM13.0056 4.52557C13.0056 5.02029 12.6065 5.41541 12.1143 5.41541C11.6188 5.41541 11.223 5.01697 11.223 4.52557C11.223 4.03416 11.6221 3.63572 12.1143 3.63572C12.6065 3.63572 13.0056 4.03416 13.0056 4.52557ZM15.5364 5.42869C15.4799 4.2367 15.2072 3.18084 14.3325 2.31092C13.4612 1.441 12.4036 1.16873 11.2097 1.10897C9.9792 1.03924 6.29101 1.03924 5.0605 1.10897C3.8699 1.16541 2.81233 1.43768 1.93768 2.3076C1.06302 3.17752 0.793639 4.23338 0.733776 5.42537C0.663937 6.65389 0.663937 10.3361 0.733776 11.5646C0.790313 12.7566 1.06302 13.8125 1.93768 14.6824C2.81233 15.5523 3.86658 15.8246 5.0605 15.8844C6.29101 15.9541 9.9792 15.9541 11.2097 15.8844C12.4036 15.8279 13.4612 15.5556 14.3325 14.6824C15.2039 13.8125 15.4766 12.7566 15.5364 11.5646C15.6063 10.3361 15.6063 6.65721 15.5364 5.42869V5.42869ZM13.9468 12.8828C13.6874 13.5336 13.1852 14.0349 12.53 14.2972C11.5489 14.6857 9.22094 14.5961 8.13677 14.5961C7.05259 14.5961 4.72128 14.6824 3.74353 14.2972C3.09169 14.0383 2.58951 13.5369 2.32678 12.8828C1.93768 11.9033 2.02747 9.57908 2.02747 8.49666C2.02747 7.41424 1.941 5.0867 2.32678 4.11053C2.58619 3.45975 3.08837 2.95838 3.74353 2.69608C4.72461 2.3076 7.05259 2.39725 8.13677 2.39725C9.22094 2.39725 11.5523 2.31092 12.53 2.69608C13.1818 2.95506 13.684 3.45643 13.9468 4.11053C14.3359 5.09002 14.2461 7.41424 14.2461 8.49666C14.2461 9.57908 14.3359 11.9066 13.9468 12.8828Z"
+                    fill="black"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_190_1610">
+                    <rect
+                      width="14.8991"
+                      height="17"
+                      fill="white"
+                      transform="translate(0.68396)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg></div
+          ></a>
+          <a href="#"
+            ><div class="footerLogo_1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 384 512"
+              >
+                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"
+                />
+              </svg></div
+          ></a>
+          <a href="#">
+            <div class="footerLogo_1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 512 512"
+              >
+                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                />
+              </svg></div
+          ></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
