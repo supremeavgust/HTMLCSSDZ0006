@@ -398,7 +398,9 @@ footer {
   justify-content: center;
   background-color: rgb(240, 240, 240);
   background-image: url(img/photo_subscribe.png);
-  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .main3_3_3 {
   max-width: 1598.001px;
